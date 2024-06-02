@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title th:remove="all">Template for HTML email with inline image</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+</head>
+<body>
+<p>
+    Hello!
+</p>
+<p>
+    The user <span th:text="${name}">user</span> has canceled his/her appointment!
+</p>
+<p>
+    Here are the details of the canceling appointment:
+</p>
+<ul>
+    <li>
+        Time: <span th:text="${date}">date</span> <span> at </span> <span th:text="${hour}">hour</span>
+    </li>
+    <li>
+        Client name: <span th:text="${firstName}">firstName </span> <span th:text="${lastName}">lastName</span>
+    </li>
+    <li>
+        Phone: <span th:text="${phone}">phone</span>
+    </li>
+    <li>
+        Location: <span th:text="${location}">location</span>
+    </li>
+</ul>
+<p>
+    Get in touch with your client if something is not right!
+</p>
+</body>
+</html>

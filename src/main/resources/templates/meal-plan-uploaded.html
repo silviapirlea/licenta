@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title th:remove="all">Template for HTML email with inline image</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+</head>
+<body>
+<p>
+    Hello, <span th:text="${name}">user</span>!
+</p>
+<p>
+    You have a meal plan uploaded from your nutritionist!
+</p>
+<p>
+    In order to see it <b>Log into the application</b> ! Don't forget to log your meal based on this plan!
+</p>
+<p>We are hoping this would help you in your meal planning journey</p>
+
+<p>
+    Regards, <br/>
+    <em>Digital Diet Planner team</em>
+</p>
+</body>
+</html>
